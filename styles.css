@@ -379,6 +379,71 @@ nav {
   font-weight: 600;
 }
 
+/* ── LOADOUT ── */
+.loadout {
+  margin-top: 20px;
+  border: 1px solid rgba(245, 166, 35, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.loadout-header {
+  background: rgba(245, 166, 35, 0.07);
+  border-bottom: 1px solid rgba(245, 166, 35, 0.15);
+  padding: 7px 14px;
+}
+
+.loadout-title {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  color: var(--accent);
+  text-transform: uppercase;
+  font-family: 'Courier New', monospace;
+}
+
+.loadout-weapons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-bottom: 1px solid rgba(245, 166, 35, 0.1);
+}
+
+.loadout-perks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.loadout-slot {
+  padding: 10px 12px;
+  border-right: 1px solid rgba(245, 166, 35, 0.08);
+}
+
+.loadout-slot:last-child {
+  border-right: none;
+}
+
+.slot-label {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #556;
+  text-transform: uppercase;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 5px;
+}
+
+.slot-value {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.slot-value.empty {
+  color: #333345;
+  font-size: 0.9rem;
+}
+
 /* ── PHOTOS PAGE ── */
 .photos-grid {
   display: grid;
