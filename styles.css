@@ -324,6 +324,7 @@ nav {
   gap: 20px;
   align-items: start;
   transition: border-color 0.2s;
+  overflow: hidden;
 }
 
 .bio-card:hover {
@@ -358,10 +359,15 @@ nav {
   margin-bottom: 10px;
 }
 
+.bio-info {
+  min-width: 0;
+}
+
 .bio-text {
   color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.65;
+  overflow-wrap: break-word;
 }
 
 .bio-tags {
@@ -407,13 +413,27 @@ nav {
 
 .loadout-weapons {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   border-bottom: 1px solid rgba(245, 166, 35, 0.1);
+}
+
+.loadout-weapons .loadout-slot:nth-child(3),
+.loadout-weapons .loadout-slot:nth-child(4) {
+  border-top: 1px solid rgba(245, 166, 35, 0.08);
 }
 
 .loadout-perks {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+}
+
+.loadout-perks .loadout-slot {
+  border-right: none;
+  border-bottom: 1px solid rgba(245, 166, 35, 0.08);
+}
+
+.loadout-perks .loadout-slot:last-child {
+  border-bottom: none;
 }
 
 .loadout-slot {
